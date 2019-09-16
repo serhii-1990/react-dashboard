@@ -1,21 +1,4 @@
-/*!
 
-=========================================================
-* Paper Dashboard React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -44,7 +27,7 @@ class User extends React.Component {
                 <div className="image">
                   <img
                     alt="..."
-                    src={require("assets/img/damir-bosnjak.jpg")}
+                    // src={require("assets/img/")}
                   />
                 </div>
                 <CardBody>
@@ -53,11 +36,11 @@ class User extends React.Component {
                       <img
                         alt="..."
                         className="avatar border-gray"
-                        src={require("assets/img/mike.jpg")}
+                        // src={require("assets/img/")}
                       />
-                      <h5 className="title">Chet Faker</h5>
+                      <h5 className="title">Farukh</h5>
                     </a>
-                    <p className="description">@chetfaker</p>
+                    <p className="description">@Farukh</p>
                   </div>
                   <p className="description text-center">
                     "I like the way you work it <br />
@@ -103,12 +86,12 @@ class User extends React.Component {
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                              // src={require("assets/img/faces/")}
                             />
                           </div>
                         </Col>
                         <Col md="7" xs="7">
-                          DJ Khaled <br />
+                          Lorem <br />
                           <span className="text-muted">
                             <small>Offline</small>
                           </span>
@@ -132,12 +115,12 @@ class User extends React.Component {
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/faces/joe-gardner-2.jpg")}
+                              // src={require("assets/img/faces/")}
                             />
                           </div>
                         </Col>
                         <Col md="7" xs="7">
-                          Creative Tim <br />
+                          Lorem Ipsum <br />
                           <span className="text-success">
                             <small>Available</small>
                           </span>
@@ -161,7 +144,7 @@ class User extends React.Component {
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
-                              src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
+                              // src={require("assets/img/faces/")}
                             />
                           </div>
                         </Col>

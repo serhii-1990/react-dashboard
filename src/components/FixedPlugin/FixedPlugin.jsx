@@ -1,21 +1,4 @@
-/*!
 
-=========================================================
-* Paper Dashboard React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React, { Component } from "react";
 
 import { Button } from "reactstrap";
@@ -26,9 +9,9 @@ class FixedPlugin extends Component {
     this.state = {
       classes: "dropdown show"
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClick();
   }
-  handleClick() {
+  handleClick = () => {
     if (this.state.classes === "dropdown") {
       this.setState({ classes: "dropdown show" });
     } else {
@@ -132,35 +115,35 @@ class FixedPlugin extends Component {
             </li>
             <li className="button-container">
               <Button
-                href="https://www.creative-tim.com/product/paper-dashboard-react"
+                href="https://some-link"
                 color="primary"
                 block
                 className="btn-round"
               >
-                Download now
+                Download
               </Button>
             </li>
             <li className="button-container">
               <Button
-                href="https://www.creative-tim.com/product/paper-dashboard-react/#/documentation/tutorial"
+                href="https://some-link"
                 color="default"
                 block
                 className="btn-round"
                 outline
               >
-                <i className="nc-icon nc-paper" /> Documentation
+                <i className="nc-icon nc-paper" /> Lorem ipsum
               </Button>
             </li>
-            <li className="header-title">Want more components?</li>
+            <li className="header-title">Lorem ipsum sit amet?</li>
             <li className="button-container">
               <Button
-                href="https://www.creative-tim.com/product/paper-dashboard-pro-react"
+                href="https://https://some-link"
                 color="danger"
                 block
                 className="btn-round"
                 target="_blank"
               >
-                Get pro version
+                Lorem ipsum sit amet?
               </Button>
             </li>
           </ul>

@@ -1,21 +1,4 @@
-/*!
 
-=========================================================
-* Paper Dashboard React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -46,11 +29,14 @@ class Header extends React.Component {
       dropdownOpen: false,
       color: "transparent"
     };
-    this.toggle = this.toggle.bind(this);
-    this.dropdownToggle = this.dropdownToggle.bind(this);
+    // console.log(this.state);
+    // this.toggle();
+    // this.dropdownToggle();
     this.sidebarToggle = React.createRef();
   }
-  toggle() {
+
+  toggle = () => {
+  //  console.log(this.state);
     if (this.state.isOpen) {
       this.setState({
         color: "transparent"
@@ -60,16 +46,17 @@ class Header extends React.Component {
         color: "dark"
       });
     }
+    // console.log(this.state);
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
-  dropdownToggle(e) {
+  dropdownToggle = (e) => {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
     });
   }
-  getBrand() {
+  getBrand = () => {
     let brandName = "Default Brand";
     routes.map((prop, key) => {
       if (window.location.href.indexOf(prop.layout + prop.path) !== -1) {
@@ -79,12 +66,12 @@ class Header extends React.Component {
     });
     return brandName;
   }
-  openSidebar() {
+  openSidebar = () => {
     document.documentElement.classList.toggle("nav-open");
     this.sidebarToggle.current.classList.toggle("toggled");
   }
   // function that adds color dark/transparent to the navbar on resize (this is for the collapse)
-  updateColor() {
+  updateColor = () => {
     if (window.innerWidth < 993 && this.state.isOpen) {
       this.setState({
         color: "dark"
@@ -162,14 +149,6 @@ class Header extends React.Component {
               </InputGroup>
             </form>
             <Nav navbar>
-              <NavItem>
-                <Link to="#pablo" className="nav-link btn-magnify">
-                  <i className="nc-icon nc-layout-11" />
-                  <p>
-                    <span className="d-lg-none d-md-block">Stats</span>
-                  </p>
-                </Link>
-              </NavItem>
               <Dropdown
                 nav
                 isOpen={this.state.dropdownOpen}
